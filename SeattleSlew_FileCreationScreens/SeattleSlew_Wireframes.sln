@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeattleSlew_Wireframes", "SeattleSlew_Wireframes\SeattleSlew_Wireframes.csproj", "{409128ad-4988-4588-bb0b-04d3a9f2ad00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeattleSlew_WireframesScreens", "SeattleSlew_Wireframes\SeattleSlew_WireframesScreens\SeattleSlew_WireframesScreens.csproj", "{ad211307-046e-467b-bf6d-318fc808c6ca}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{409128AD-4988-4588-BB0B-04D3A9F2AD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409128AD-4988-4588-BB0B-04D3A9F2AD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409128AD-4988-4588-BB0B-04D3A9F2AD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409128AD-4988-4588-BB0B-04D3A9F2AD00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD211307-046E-467B-BF6D-318FC808C6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD211307-046E-467B-BF6D-318FC808C6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD211307-046E-467B-BF6D-318FC808C6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD211307-046E-467B-BF6D-318FC808C6CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

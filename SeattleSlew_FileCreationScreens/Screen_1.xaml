@@ -1,0 +1,165 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:epm="http://schemas.microsoft.com/expression/2010/prototyping/mockups"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
+	mc:Ignorable="d"
+	x:Class="SeattleSlew_FileCreationScreens.Screen_1"
+	Width="auto" Height="400">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<TextBlock Style="{StaticResource TextBlock-Sketch}" Text="Create" FontSize="32" Margin="5"/>
+		<ScrollViewer Grid.Row="1" Style="{StaticResource ScrollViewer-Sketch}" Margin="5">
+			<ListBox Style="{StaticResource ListBox-Sketch}">
+								<epm:ButtonWithIconMockup x:Name="Template" Content="Template" IconImage="Document"   Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.PortfolioTemplate"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="PortfolioFromTemplate" Content="Portfolio from Template" IconImage="Document"   Margin="5">
+									<i:Interaction.Triggers>
+										<i:EventTrigger EventName="Click">
+											<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.FromTemplate"/>
+										</i:EventTrigger>
+									</i:Interaction.Triggers>
+								</epm:ButtonWithIconMockup>
+								<epm:ButtonWithIconMockup x:Name="CLI" Content="Portfolio" IconImage="Document"   Margin="5">
+									<i:Interaction.Triggers>
+										<i:EventTrigger EventName="Click">
+											<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.BlankPortfolio"/>
+										</i:EventTrigger>
+									</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="GRP" Content="Group" IconImage="Document" Grid.Row="1"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.Group"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="CPG" Content="Composite" IconImage="Document" Grid.Row="2"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.Composite"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="PRF" Content="Perf. (Net)" IconImage="Document" Grid.Row="3"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.PerfNET"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="PBF" Content="Perf. (Gross)" IconImage="Document" Grid.Row="4"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.PerfGROSS"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="DEX" Content="Index" IconImage="Document" Grid.Row="5"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.Index"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+
+				<epm:ButtonWithIconMockup x:Name="PRI" Content="Price" IconImage="Document"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.Price"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="FX" Content="Spot Rate" IconImage="Document" Grid.Row="1"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.FX"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="FFX" Content="Forward Fx Rate" IconImage="Document" Grid.Row="2"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.FFX"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="FAC" Content="Factor" IconImage="Document" Grid.Row="3"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.Factor"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="RTE" Content="Reset Rate" IconImage="Document" Grid.Row="4"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.ResetRate"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="STE" Content="Base Rate" IconImage="Document" Grid.Row="5"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.BaseRate"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+
+				<epm:ButtonWithIconMockup x:Name="DTE" Content="Coupon Date" IconImage="Document"   Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.CouponDate"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>			
+				<epm:ButtonWithIconMockup x:Name="RGN" Content="Region" IconImage="Document" Grid.Row="1"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.Region"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="ENM" Content="Added Security Data - Number" IconImage="Document" Grid.Row="2"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.ENM"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="EST" Content="Added Security Data - String" IconImage="Document" Grid.Row="3"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.EST"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+				<epm:ButtonWithIconMockup x:Name="EDT" Content="Added Security Data - Date" IconImage="Document" Grid.Row="4"  Margin="5">
+					<i:Interaction.Triggers>
+						<i:EventTrigger EventName="Click">
+							<pi:NavigateToScreenAction TargetScreen="SeattleSlew_FileCreationScreens.EDT"/>
+						</i:EventTrigger>
+					</i:Interaction.Triggers>
+				</epm:ButtonWithIconMockup>
+			</ListBox>
+			
+		</ScrollViewer>
+		<Button Content="Cancel" Grid.Row="2" Style="{StaticResource Button-Sketch}" Width="75" Margin="5"/>
+	</Grid>
+</UserControl>
